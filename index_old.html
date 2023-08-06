@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="shortcut icon" href="/image?id=logo.ico">
+    </link>
+    <link rel="stylesheet" href="/css/picnic.css">
+    <link rel="stylesheet" href="/css/Semantic-UI-CSS-master/semantic.min.css">
+    <script type="text/javascript" src="/css/Sticky Example - Semantic_files/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="/css/Semantic-UI-CSS-master/components/semantic.min.js">
+    </script>
+  </head>
+  
+  <body>
+    <div class="page">
+      <div class="content">
+    <div style="overflow: hidden;height: 50px;">
+      <nav class="demo">
+        <a href="/" class="brand">
+          <img class="logo" src="/image?id=logo.ico" />
+          <span>{{title}}</span>
+        </a>
+        <input id="bmenub" type="checkbox" class="show">
+        <label for="bmenub" class="burger pseudo button">menu</label>
+        <div class="menu">
+          <input placeholder="搜索文档" />
+        </div>
+        <div class="menu">
+          <a href="/" class="pseudo button icon-picture">文档</a>
+        </div>
+        <div class="menu">
+          <div class="item">
+            <a href="/document/partner.html" class="pseudo button icon-picture">友情链接</a>
+          </div>
+        </div>
+    </div>
+    <div><!--正文-->
+
+    {% raw file_txt %}
+    </div>
+    </div>
+    </nav>
+    <!--底部显示-->
+    <div class ="footer">
+    <footer class="ui inverted attached segment m-padded-big">
+      <div class="ui center aligned container">
+        <div class="ui inverted divided grid">
+          <div class="three wide column">
+            <div class="ui inverted link list">
+            <h4 class="m-text-thin">官方群聊</h4>
+          </div>
+            <a href="https://qm.qq.com/cgi-bin/qm/qr?k=8xTzozjIg3vS0aFJG_ToyM6xcGy7cYd1&jump_from=webapi&authKey=Axnc7C5hI4wCvgUbZtD5Dieu/1VFvbCCbky83na2gv3lbvMitZykCTK90A0FqzPU" class="item">扫码或点击链接加群</a>
+            <img src="/image?id=qrcode-302.png" class="item" style="width: 100px;">
+          </div>
+          <div class="three wide column">
+            <div class="ui inverted link list">
+              <h4 class="m-text-thin">更新公告</h4>
+              <a href="#" class="item">暂无更新</a>
+            </div>
+          </div>
+          <div class="three wide column">
+            <div class="ui inverted link list">
+              <h4 class="m-text-thin">合作伙伴</h4>
+              {% raw partner %}
+            </div>
+          </div>
+        </div>
+        <div class="ui divider">
+        </div>
+        <div class="ui inverted segment m-padded-large">
+          <p class="m-opacity m-text-thin m-text-spacing">Copyright@2022-2022 By DotCS<br></p>
+          <p class="m-opacity m-text-thin m-text-spacing">备案号: <a href="https://beian.miit.gov.cn/">赣ICP备2023000840号-1<br></a></p>
+          <p class="m-opacity m-text-thin m-text-spacing">"Minecraft" 以及 "我的世界" 为 Mojang Synergies AB 的商标 | 本站与 Mojang 及 Microsoft(微软公司) 没有从属关系。
+            本站原创图文内容版权属于原创作者，未经许可不得转载。</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+</div>
+  </body>
+
+</html>

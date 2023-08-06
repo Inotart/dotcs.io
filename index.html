@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>幻梦互联工作室官网</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/image?id=logo.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="/static/css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="/static/css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+    <style type="text/css">
+
+        .hidden.menu {
+          display: none;
+        }
+    
+        .masthead.segment {
+          min-height: 700px;
+          padding: 1em 0em;
+        }
+        .masthead .logo.item img {
+          margin-right: 1em;
+        }
+        .masthead .ui.menu .ui.button {
+          margin-left: 0.5em;
+        }
+        .masthead h1.ui.header {
+          margin-top: 3em;
+          margin-bottom: 0em;
+          font-size: 4em;
+          font-weight: normal;
+        }
+        .masthead h2 {
+          font-size: 1.7em;
+          font-weight: normal;
+        }
+    
+        .ui.vertical.stripe {
+          padding: 8em 0em;
+        }
+        .ui.vertical.stripe h3 {
+          font-size: 2em;
+        }
+        .ui.vertical.stripe .button + h3,
+        .ui.vertical.stripe p + h3 {
+          margin-top: 3em;
+        }
+        .ui.vertical.stripe .floated.image {
+          clear: both;
+        }
+        .ui.vertical.stripe p {
+          font-size: 1.33em;
+        }
+        .ui.vertical.stripe .horizontal.divider {
+          margin: 3em 0em;
+        }
+    
+        .quote.stripe.segment {
+          padding: 0em;
+        }
+        .quote.stripe.segment .grid .column {
+          padding-top: 5em;
+          padding-bottom: 5em;
+        }
+    
+        .footer.segment {
+          padding: 5em 0em;
+        }
+    
+        .secondary.pointing.menu .toc.item {
+          display: none;
+        }
+    
+        @media only screen and (max-width: 700px) {
+          .ui.fixed.menu {
+            display: none !important;
+          }
+          .secondary.pointing.menu .item,
+          .secondary.pointing.menu .menu {
+            display: none;
+          }
+          .secondary.pointing.menu .toc.item {
+            display: block;
+          }
+          .masthead.segment {
+            min-height: 350px;
+          }
+          .masthead h1.ui.header {
+            font-size: 2em;
+            margin-top: 1.5em;
+          }
+          .masthead h2 {
+            margin-top: 0.5em;
+            font-size: 1.5em;
+          }
+        }
+    
+    
+      </style>
+    <script>
+        $(document)
+          .ready(function() {
+      
+            // fix menu when passed
+            $('.masthead')
+              .visibility({
+                once: false,
+                onBottomPassed: function() {
+                  $('.fixed.menu').transition('fade in');
+                },
+                onBottomPassedReverse: function() {
+                  $('.fixed.menu').transition('fade out');
+                }
+              })
+            ;
+      
+            // create sidebar and attach to menu open
+            $('.ui.sidebar')
+              .sidebar('attach events', '.toc.item')
+            ;
+      
+          })
+        ;
+        </script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/Semantic-UI-CSS-master/semantic.css">
+    <script src="/static/css/shouye_files/jquery.min.js"></script>
+    <script src="/static/css/shouye_files/visibility.js"></script>
+    <script src="/static/css/shouye_files/sidebar.js"></script>
+    <script src="/static/css/shouye_files/transition.js"></script>
+    <script src="/static/css/Semantic-UI-CSS-master/semantic.js"></script>
+    <script src="/static/js/skinview3d.bundle.js"></script>
+    <script>
+        $(document)
+          .ready(function() {
+      
+            // fix menu when passed
+            $('.masthead')
+              .visibility({
+                once: false,
+                onBottomPassed: function() {
+                  $('.fixed.menu').transition('fade in');
+                },
+                onBottomPassedReverse: function() {
+                  $('.fixed.menu').transition('fade out');
+                }
+              })
+            ;
+      
+            // create sidebar and attach to menu open
+            $('.ui.sidebar')
+              .sidebar('attach events', '.toc.item')
+            ;
+      
+          })
+        ;
+        </script>
+</head>
+<body>
+  <div class="ui large top fixed menu transition hidden" style="display: flex !important;"
+  </div>
+  
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu left">
+    <a class="toc item" >关闭小菜单</a>
+    <a class="item" href="https://www.mcppl.cn/document/index.html">文档</a>
+    <a class="item" href="https://uc.mcppl.cn">用户中心</a>
+    <a class="item" href="https://zeus.mcppl.cn">宙斯面板</a>
+    <a class="item" href="https://www.mcppl.cn/document/%E4%B8%8B%E8%BD%BD/download.html">下载</a>
+    <a class="item" href="/tool">工具</a>
+    <a class="item" href="/shop">商店</a>
+  </div>
+      </div>
+      <div class="ui vertical inverted sidebar menu left">
+        <a class="active item" href="/">首页</a>
+        <a class="item" href="https://afdian.net/a/NakanoMiku">捐赠</a>
+      </div>
+
+    <div>
+      <video class="video-background" preload="auto" loop playsinline autoplay src="/static/vedio/网站首页背景.mp4" tabindex="-1" muted="muted" style="position: absolute;height: 100%; width: 100%; display: block;object-fit:fill;"></video>
+        <div class="ui container" >
+            <div class="ui large secondary menu" >
+              <a class="toc item" style="color:#FFF;border:none">
+                <img class="logo" src="/image?id=logo.ico" />
+                {{title}}
+              </a>
+              <a class="active item" href="/" style="color:#FFF;border:none">首页</a>
+              <a class="item" href="https://www.mcppl.cn/document/index.html" style="color:#FFF;border:none">文档</a>
+              <a class="item" href="https://uc.mcppl.cn" style="color:#FFF;border:none">用户中心</a>
+              <a class="item" href="https://zeus.mcppl.cn" style="color:#FFF;border:none">宙斯面板</a>
+              <div class="right item">
+              </div>
+            </div>
+          </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-content-wrap flex flex-column  align-items-start">
+                        <header class="entry-header">
+                            <h4>Dot Command System</h4>
+                            <h1>幻梦互联-DotCS<br/>我的世界租赁服插件导入工具</h1>
+                        </header><!-- .entry-header -->
+                        <br>
+                        <a href="https://qm.qq.com/cgi-bin/qm/qr?k=8xTzozjIg3vS0aFJG_ToyM6xcGy7cYd1&jump_from=webapi&authKey=Axnc7C5hI4wCvgUbZtD5Dieu/1VFvbCCbky83na2gv3lbvMitZykCTK90A0FqzPU"><div class="ui huge primary button" >立即下载 <i class="right arrow icon"></i></div></a>
+                    </div><!-- .hero-content-wrap -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+        
+        <div class="ui text container"></div>
+      </div>
+    <div class="pusher">
+
+        <div class="icon-boxes">
+            <div class="container-fluid">
+                <div class="flex flex-wrap align-items-stretch">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <span class="ti-user"></span>
+                        </div><!-- .icon -->
+
+                        <header class="entry-header">
+                            <h2 class="entry-title">高扩展性</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content">
+                            <p>DotCS是基于Fastbuilder的一个外置程序， 可以在网易我的世界租赁服中使用， 添加扩展。且接口众多。</p>
+                        </div><!-- .entry-content -->
+                    </div><!-- .icon-box -->
+
+                    <div class="icon-box">
+                        <div class="icon">
+                            <span class="ti-folder"></span>
+                        </div><!-- .icon -->
+
+                        <header class="entry-header">
+                            <h2 class="entry-title">万物皆可模块化</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content">
+                            <p>您可以使用此程序来防止您的服务器被攻击，破坏，也可以使您的服务器实现很多原版指令无法实现的功能</p>
+                        </div><!-- .entry-content -->
+                    </div><!-- .icon-box -->
+
+                    <div class="icon-box">
+                        <div class="icon">
+                            <span class="ti-book"></span>
+                        </div><!-- .icon -->
+
+                        <header class="entry-header">
+                            <h2 class="entry-title">多才多艺</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content">
+                            <p>一个丰富的、可增量采用的生态系统，可在库和功能齐全的框架之间扩展。</p>
+                        </div><!-- .entry-content -->
+                    </div><!-- .icon-box -->
+
+                    <div class="icon-box">
+                        <div class="icon">
+                            <span class="ti-world"></span>
+                        </div><!-- .icon -->
+
+                        <header class="entry-header">
+                            <h2 class="entry-title">简单易用</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content">
+                            <p>DotCS 的安装十分的简单,您只需要看得懂中文您就会使用DotCS。同时 DotCS 采用了 python 作为其扩展语言,使得用户编写插件非常的简单</p>
+                        </div><!-- .entry-content -->
+                    </div><!-- .icon-box -->
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
+        </div><!-- .icon-boxes -->
+
+        <section class="featured-courses horizontal-column courses-wrap">
+            <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <header class="heading flex justify-content-between align-items-center">
+                        <h2 class="entry-title"><i class="gamepad icon" style="color:mediumturquoise"></i>功能介绍</h2>
+
+                        <a class="btn mt-4 mt-sm-0" href="#">view all</a>
+                    </header><!-- .heading -->
+                </div><!-- .col -->
+                      <div class="ui vertical stripe segment">
+                        <div class="ui middle aligned stackable grid container">
+                          <div class="row">
+                            <div class="eight wide column">
+                              <h3 class="ui header">打破指令的局限性</h3>
+                              <p>DotCS的插件功能,让您在网易我的世界租赁服务指令的基础上。更加快速，更加友好的执行指令</p>
+                            </div>
+                            <div class="six wide right floated column">
+                              <img src="/image?id=QQ图片20221003133346.jpg" class="ui large bordered rounded image"/>
+                              
+                            </div>
+                            
+                          </div>
+                      </div>
+                </div><!-- .row -->
+                <div class="row">
+                    <div class="col-12">
+                        <header class="heading flex justify-content-between align-items-center">
+                            <h2 class="entry-title"><i class="server icon" style="color:mediumturquoise"></i>开发成员介绍</h2>
+                            
+
+                            
+                        </header><!-- .heading -->
+                    </div><!-- .col -->
+                    <div class="col-12"><h3 class="entry-title">本成员列出的是 DotCS 官方开发组成员列表</h3></div>
+                  </div>
+                <div class="row">
+                  <div class ="ui cards">
+                    <div class="card">
+                      <canvas id="skin_container"></canvas>
+                      <div class="content">
+                        <div class="header">去幻想乡的老art</div>
+                        <div class="description">DotCS 创始人之一</div>
+                      </div>
+                      <a class="ui bottom attached button" href="http://wpa.qq.com/msgrd?v=3&uin=121980156&site=qq&menu=yes"><i class="qq icon"></i> 添加好友 </a>
+                    </div>
+                    <div class="card">
+                      <canvas id="skin_container1"></canvas>
+                      <div class="content">
+                        <div class="header">xX7912Xx</div>
+                        <div class="description">DotCS 创始人之一(现已不再开发)</div>
+                      </div>
+                      <a class="ui bottom attached button" href="http://wpa.qq.com/msgrd?v=3&uin=121980156&site=qq&menu=yes"><i class="qq icon"></i> 添加好友 </a>
+                    </div>
+                    <div class="card">
+                      <canvas id="skin_container2"></canvas>
+                      <div class="content">
+                        <div class="header">逗比逗乐傻</div>
+                        <div class="description">DotCS Exp版开发</div>
+                      </div>
+                      <a class="ui bottom attached button"><i class="qq icon"></i> 添加好友 </a>
+                    </div>
+                    <div class="card">
+                      <canvas id="skin_container3"></canvas>
+                      <div class="content">
+                        <div class="header">南希</div>
+                        <div class="description">运营</div>
+                      </div>
+                      <a class="ui bottom attached button" href="http://wpa.qq.com/msgrd?v=3&uin=121980156&site=qq&menu=yes"><i class="qq icon"></i> 添加好友 </a>
+                    </div>
+                    <div class="card">
+                      <canvas id="skin_container4"></canvas>
+                      <div class="content">
+                        <div class="header">XIAOYI12</div>
+                        <div class="description">OpenEX-ScriptLanguage 开发者</div>
+                      </div>
+                      <a class="ui bottom attached button" href="http://wpa.qq.com/msgrd?v=3&uin=121980156&site=qq&menu=yes"><i class="qq icon"></i> 添加好友 </a>
+                    </div>
+                    <div class="card">
+                      <canvas id="skin_container5"></canvas>
+                      <div class="content">
+                        <div class="header">萌樱</div>
+                        <div class="description">摸鱼的孩</div>
+                      </div>
+                      <a class="ui bottom attached button" href="http://wpa.qq.com/msgrd?v=3&uin=121980156&site=qq&menu=yes"><i class="qq icon"></i> 添加好友 </a>
+                    </div>
+                    <div class="card">
+                      <canvas id="skin_container6"></canvas>
+                      <div class="content">
+                        <div class="header">xingchen</div>
+                        <div class="description">摸鱼的2孩</div>
+                      </div>
+                      <a class="ui bottom attached button" href="http://wpa.qq.com/msgrd?v=3&uin=121980156&site=qq&menu=yes"><i class="qq icon"></i> 添加好友 </a>
+                    </div>
+                  </div>
+                </div><!-- .row -->
+                <script>
+	                let skinViewer = new skinview3d.SkinViewer({
+	                	canvas: document.getElementById("skin_container"),
+	                	width: 290,
+	                	height: 400,
+	                	skin: "/static/image/sky/Go_Art.png"
+	                });
+	                let skinViewer1 = new skinview3d.SkinViewer({
+	                	canvas: document.getElementById("skin_container1"),
+	                	width: 290,
+	                	height: 400,
+	                	skin: "/static/image/sky/steve.png"
+	                });             
+	                let skinViewer2 = new skinview3d.SkinViewer({
+	                	canvas: document.getElementById("skin_container2"),
+	                	width: 290,
+	                	height: 400,
+	                	skin: "/static/image/sky/steve.png"
+	                });        
+	                let skinViewer3 = new skinview3d.SkinViewer({
+	                	canvas: document.getElementById("skin_container3"),
+	                	width: 290,
+	                	height: 400,
+	                	skin: "/static/image/sky/badynanxi.png"
+	                });   
+	                let skinViewer4 = new skinview3d.SkinViewer({
+	                	canvas: document.getElementById("skin_container4"),
+	                	width: 290,
+	                	height: 400,
+	                	skin: "/static/image/sky/steve.png"
+	                });      
+	                let skinViewer5 = new skinview3d.SkinViewer({
+	                	canvas: document.getElementById("skin_container5"),
+	                	width: 290,
+	                	height: 400,
+	                	skin: "/static/image/sky/萌樱.png"
+	                });      
+	                let skinViewer6 = new skinview3d.SkinViewer({
+	                	canvas: document.getElementById("skin_container6"),
+	                	width: 290,
+	                	height: 400,
+	                	skin: "/static/image/sky/steve.png"
+	                });      
+	                // Unload(hide) the cape / elytra
+	                skinViewer.loadCape(null);
+                  skinViewer1.loadCape(null);
+                  skinViewer2.loadCape(null);
+                  skinViewer3.loadCape(null);
+                  skinViewer4.loadCape(null);
+                  skinViewer5.loadCape(null);
+                  skinViewer6.loadCape(null);
+	                // Set the background color
+	                skinViewer.background = 0xffffff;
+                  skinViewer1.background = 0xffffff;
+                  skinViewer2.background = 0xffffff;
+                  skinViewer3.background = 0xffffff;
+                  skinViewer4.background = 0xffffff;
+                  skinViewer5.background = 0xffffff;
+                  skinViewer6.background = 0xffffff;
+	                // Change camera FOV
+	                skinViewer.fov = 70;
+                  skinViewer1.fov = 70;
+                  skinViewer2.fov = 70;
+                  skinViewer3.fov = 70;
+                  skinViewer4.fov = 70;
+                  skinViewer5.fov = 70;
+                  skinViewer6.fov = 70;
+	                // Zoom out
+	                skinViewer.zoom = 0.5;
+                  skinViewer1.zoom = 0.5;
+                  skinViewer2.zoom = 0.5;
+                  skinViewer3.zoom = 0.5;
+                  skinViewer4.zoom = 0.5;
+                  skinViewer5.zoom = 0.5;
+                  skinViewer6.zoom = 0.5;
+	                // Rotate the player
+	                skinViewer.autoRotate = true;
+                  skinViewer1.autoRotate = true;
+                  skinViewer2.autoRotate = true;
+                  skinViewer3.autoRotate = true;
+                  skinViewer4.autoRotate = true;
+                  skinViewer5.autoRotate = true;
+                  skinViewer6.autoRotate = true;
+	                // Apply an animation
+	                skinViewer.animation = new skinview3d.WalkingAnimation();
+                  skinViewer1.animation = new skinview3d.WalkingAnimation();
+                  skinViewer2.animation = new skinview3d.WalkingAnimation();
+                  skinViewer3.animation = new skinview3d.WalkingAnimation();
+                  skinViewer4.animation = new skinview3d.WalkingAnimation();
+                  skinViewer5.animation = new skinview3d.WalkingAnimation();
+                  skinViewer6.animation = new skinview3d.WalkingAnimation();
+	                // Set the speed of the animation
+	                skinViewer.animation.speed = 3;
+                  skinViewer1.animation.speed = 3;
+                  skinViewer2.animation.speed = 3;
+                  skinViewer3.animation.speed = 3;
+                  skinViewer4.animation.speed = 3;
+                  skinViewer5.animation.speed = 3;
+                  skinViewer6.animation.speed = 3;
+	                // Pause the animation
+	                skinViewer.animation.paused = true;
+                  skinViewer1.animation.paused = true;
+                  skinViewer2.animation.paused = true;
+                  skinViewer3.animation.paused = true;
+                  skinViewer4.animation.paused = true;
+                  skinViewer5.animation.paused = true;
+                  skinViewer6.animation.paused = true;
+	                // Remove the animation
+	                skinViewer.animation = null;
+                  skinViewer1.animation = null;
+                  skinViewer2.animation = null;
+                  skinViewer3.animation = null;
+                  skinViewer4.animation = null;
+                  skinViewer5.animation = null;
+                  skinViewer6.animation = null;
+                </script>
+            </div><!-- .container -->
+        </section><!-- .courses-wrap -->
+    <div class ="footer">
+    <footer class="ui inverted attached segment m-padded-big">
+      <div class="ui inverted vertical footer segment">
+        <div class="ui container">
+          <div class="ui stackable inverted divided equal height stackable grid">
+            <div class="three wide column">
+              <h4 class="ui inverted header">About</h4>
+              <div class="ui inverted link list">
+                <a href="/document/DotCS介绍/什么是DotCS.html" class="item">什么是 DotCS?</a>
+                <a href="/document/DotCS介绍/为何选择DotCS.html" class="item">为何选择 DotCS?</a>
+                <a href="/document/DotCS介绍/我该如何购买DotCS.html" class="item">我该如何购买 DotCS?</a>
+                <a href="/document/DotCS介绍/DotCS是开源的嘛.html" class="item">DotCS 是开源的嘛?</a>
+                <a href="/document/DotCS介绍/QQ群机器人部署支持.html" class="item">如何部署 DotCS Q群机器人到自己的QQ群?</a>
+                <a href="/document/DotCS介绍/DotCS版权归属.html" class="item">DotCS 版权归属</a>
+              </div>
+            </div>
+            <div class="three wide column">
+              <h4 class="ui inverted header">友情链接</h4>
+              <div class="ui inverted link list">
+                <a href="https://mcppl.art" title="DotCS 官方文档网站" class="item">mcppl</a>
+                <a href="https://cbergit.com/" title="cbergit 论坛,让一切思路皆有意义" class="item">cbergit</a>
+                <a href="https://fastbuilder.pro/" title="FB官方网站" class="item">fastbuilder</a>
+              </div>
+            </div>
+            <div class="three wide column">
+              <h4 class="ui inverted header">官方群聊</h4>
+              <div class="ui inverted link list">
+                <a href="https://qm.qq.com/cgi-bin/qm/qr?k=8xTzozjIg3vS0aFJG_ToyM6xcGy7cYd1&jump_from=webapi&authKey=Axnc7C5hI4wCvgUbZtD5Dieu/1VFvbCCbky83na2gv3lbvMitZykCTK90A0FqzPU" class="item">扫码或点击链接加群</a>
+                <img src="/image?id=qrcode-302.png" class="item" style="width: 100px;">
+              </div>
+            </div>
+            <div class="seven wide column">
+              <h4 class="ui inverted header">如何加入我们</h4>
+              <p>只要您具备一定的编程水平即可加入我们,具体方式请扫码入群咨询群主</p>
+            </div>
+            <p class="m-opacity m-text-thin m-text-spacing">Copyright@2022-2023 By 万载县幻梦互联网服务工作室<br></p>
+            <p class="m-opacity m-text-thin m-text-spacing">备案号: <a href="https://beian.miit.gov.cn/">赣ICP备2023000840号-1<br></a></p>
+            <p class="m-opacity m-text-thin m-text-spacing">"Minecraft" 以及 "我的世界" 为 Mojang Synergies AB 的商标 | 本站与 Mojang 及 Microsoft(微软公司) 没有从属关系。
+              本站原创图文内容版权属于原创作者，未经许可不得转载。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
+</html>

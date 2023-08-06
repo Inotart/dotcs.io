@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://semantic-ui.com/examples/homepage.html -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Standard Meta -->
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>DotCS 用户中心</title>
+  <link rel="shortcut icon" href="/image?id=logo.ico">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/site.css">
+
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/container.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/header.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/image.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/divider.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/segment.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/button.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/list.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/icon.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="/css/shouye_files/transition.css">
+  <link rel="stylesheet" type="text/css" href="/css/Semantic-UI-CSS-master/semantic.css">
+  <style>
+    .VAPTCHA-init-main {
+        display: table;
+        width: 100%;
+        height: 100%;
+        background-color: #eeeeee;
+    }
+
+    .VAPTCHA-init-loading {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .VAPTCHA-init-loading>a {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: none;
+    }
+
+    .VAPTCHA-init-loading .VAPTCHA-text {
+        font-family: sans-serif;
+        font-size: 12px;
+        color: #cccccc;
+        vertical-align: middle;
+    }
+</style>
+  <script src="/css/v3.js"></script>
+  <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+
+  <script src="/css/shouye_files/jquery.min.js"></script>
+  <script src="/css/shouye_files/visibility.js"></script>
+  <script src="/css/shouye_files/sidebar.js"></script>
+  <script src="/css/shouye_files/transition.js"></script>
+  <script src="/css/Semantic-UI-CSS-master/semantic.js"></script>
+  <style type="text/css">
+    body {
+      background-color: #DADADA;
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  </script>
+    <script>
+      $(document)
+        .ready(function() {
+          $('.ui.form')
+            .form({
+              fields: {
+                user: {
+                  identifier  : 'user',
+                  rules: [
+                    {
+                      type   : 'empty',
+                      prompt : '请输入您的用户名'
+                    },
+                  ]
+                },
+                password: {
+                  identifier  : 'password',
+                  rules: [
+                    {
+                      type   : 'empty',
+                      prompt : '请输入密码'
+                    },
+                    {
+                      type   : 'length[10]',
+                      prompt : '密码长度不得少于10位'
+                    }
+                  ]
+                },
+              }
+            })
+          ;
+        })
+      ;
+    </script>
+
+</head>
+<body class="pushable">
+
+<!-- Following Menu -->
+
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu left">
+  <a class="toc item" >关闭小菜单</a>
+  <a class="item" href="/">首页</a>
+  <a class="item" href="/document">文档</a>
+  <a class="item" href="/user">用户中心</a>
+  <a class="item" href="/download">下载</a>
+  <a class="item" href="/user/index">用户中心首页</a>
+  <a class="item" href="/user/index/announcement">公告</a>
+  <a class="item" href="/user/index/self">个人信息</a>
+  <a class="item" href="/user/index/self">防火墙</a>
+  <a class="item" href="/user/index/self">面板</a>
+  <a class="item" href="/user/index/self">下载</a>
+  <a class="item" href="/user/index/self">商店</a>
+  <a class="item" href="/user/index/self">购物车</a>
+  <a class="item" href="/user/index/self">代理结算台</a>
+  <a class="item" href="/user/index/self">管理员:文档管理</a>
+  <a class="item" href="/user/index/self">管理员:下载管理</a>
+  <a class="item" href="/user/index/self">管理员:工具管理</a>
+  <a class="item" href="/user/index/self">管理员:高级管理</a>
+  <a class="item" href="/shop">商店</a>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+    <div class="ui large top menu" style="display: flex !important;">
+
+        <div class="ui container">
+          <a class="toc item" >       
+            <img class="logo" src="/image?id=logo.ico" />
+            {{title}}
+          </a>
+          <a href="/" class="item">首页</a>
+          <a href="/document" class="item">文档</a>
+          <a class="item" href="/user">用户中心</a>
+          <a class="item" href="/download">下载</a>
+
+        </div>
+      </div>
+      
+    <!--正文-->
+    
+
+      {% raw file_txt %}
+    <!--末尾-->
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a href="/document/DotCS介绍/什么是DotCS.html" class="item">什么是 DotCS?</a>
+            <a href="/document/DotCS介绍/为何选择DotCS.html" class="item">为何选择 DotCS?</a>
+            <a href="/document/DotCS介绍/我该如何购买DotCS.html" class="item">我该如何购买 DotCS?</a>
+            <a href="/document/DotCS介绍/DotCS是开源的嘛.html" class="item">DotCS 是开源的嘛?</a>
+            <a href="/document/DotCS介绍/QQ群机器人部署支持.html" class="item">如何部署 DotCS Q群机器人到自己的QQ群?</a>
+            <a href="/document/DotCS介绍/DotCS版权归属.html" class="item">DotCS 版权归属</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">友情链接</h4>
+          <div class="ui inverted link list">
+            <a href="https://mcppl.art" title="DotCS 官方文档网站" class="item">mcppl</a>
+            <a href="https://cbergit.com/" title="cbergit 论坛,让一切思路皆有意义" class="item">cbergit</a>
+            <a href="https://fastbuilder.pro/" title="FB官方网站" class="item">fastbuilder</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">官方群聊</h4>
+          <div class="ui inverted link list">
+            <a href="https://qm.qq.com/cgi-bin/qm/qr?k=8xTzozjIg3vS0aFJG_ToyM6xcGy7cYd1&jump_from=webapi&authKey=Axnc7C5hI4wCvgUbZtD5Dieu/1VFvbCCbky83na2gv3lbvMitZykCTK90A0FqzPU" class="item">扫码或点击链接加群</a>
+            <img src="/image?id=qrcode-302.png" class="item" style="width: 100px;">
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">如何加入我们</h4>
+          <p>只要您具备一定的编程水平即可加入我们,具体方式请扫码入群咨询群主</p>
+        </div>
+        <p class="m-opacity m-text-thin m-text-spacing">Copyright@2022-2022 By DotCS<br></p>
+        <p class="m-opacity m-text-thin m-text-spacing">备案号: <a href="https://beian.miit.gov.cn/">赣ICP备2023000840号-1<br></a></p>
+        <p class="m-opacity m-text-thin m-text-spacing">"Minecraft" 以及 "我的世界" 为 Mojang Synergies AB 的商标 | 本站与 Mojang 及 Microsoft(微软公司) 没有从属关系。
+          本站原创图文内容版权属于原创作者，未经许可不得转载。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body></html>
